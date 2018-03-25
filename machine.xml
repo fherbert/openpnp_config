@@ -1,12 +1,14 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.96">
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="N1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="NT1" allow-incompatible-packages="true">
-                        <compatible-package-ids class="java.util.HashSet"/>
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="NT1" allow-incompatible-packages="false">
+                        <compatible-package-ids class="java.util.HashSet">
+                           <id>R0805</id>
+                        </compatible-package-ids>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
                         <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -35,13 +37,15 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="68.5" y="-7.0" z="-10.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="69.006" y="-8.107" z="-10.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N2" name="N2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N2" name="N2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT2" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT2" name="NT2" allow-incompatible-packages="true">
-                        <compatible-package-ids class="java.util.HashSet"/>
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT2" name="NT2" allow-incompatible-packages="false">
+                        <compatible-package-ids class="java.util.HashSet">
+                           <id>R0805</id>
+                        </compatible-package-ids>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
                         <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -70,19 +74,19 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="37.2" y="-8.0" z="-10.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="37.6" y="-9.4" z="-10.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
             </nozzles>
             <actuators>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="A1" name="A1" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="A1" name="DownCamLights" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1521422218348" name="Top" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
-                  <units-per-pixel units="Millimeters" x="0.08695652" y="0.08547009" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1521422218348" name="Top" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="1" preferred-width="0" preferred-height="0" fps="24">
+                  <units-per-pixel units="Millimeters" x="0.05102041" y="0.05319149" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
@@ -94,15 +98,15 @@
                </camera>
             </cameras>
             <paste-dispensers/>
-            <park-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <park-location units="Millimeters" x="174.7" y="208.143" z="0.0" rotation="0.0"/>
          </head>
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F1" name="R0805" enabled="true" part-id="R0805-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F1" name="R0805" enabled="true" part-id="R0201-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="1">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="147.347" y="40.285" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="147.433" y="36.238" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="2.807" y="7.395" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="2.825" y="3.301" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -187,10 +191,10 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1521431493608" name="R0805" enabled="false" part-id="R0805-56" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1521431493608" name="R0805-1" enabled="true" part-id="R0805-56" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="5">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="86.412" y="102.051" z="-13.6" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="86.516" y="97.985" z="-13.6" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -210,15 +214,22 @@
             </pipeline>
          </feeder>
       </feeders>
-      <cameras/>
-      <actuators>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1521428922298" name="DownCamLights" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <cameras>
+         <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1521857774611" name="Bottom" looking="Up" settle-time-ms="250" rotation="-90.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
+            <units-per-pixel units="Millimeters" x="0.01010101" y="0.01030928" z="0.0" rotation="0.0"/>
+            <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+            <head-offsets units="Millimeters" x="266.476" y="-20.867" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-      </actuators>
+            <calibration enabled="true">
+               <camera-matrix length="9">2150.468983874484, 0.0, 631.0856994278606, 0.0, 2151.766783534624, 364.338668814196, 0.0, 0.0, 1.0</camera-matrix>
+               <distortion-coefficients length="5">-0.5463523430052905, 6.618181270566573, -0.0026085923424572794, 0.0039539227099047, -66.53333638473914</distortion-coefficients>
+            </calibration>
+            <properties class="java.util.ArrayList"/>
+         </camera>
+      </cameras>
+      <actuators/>
       <part-alignments>
-         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" enabled="false" pre-rotate="false">
+         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" enabled="true" pre-rotate="false">
             <pipeline>
                <stages>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true"/>
@@ -301,7 +312,7 @@
                </entry>
                <entry>
                   <string>R0805-56</string>
-                  <part-settings enabled="false">
+                  <part-settings enabled="true">
                      <pipeline>
                         <stages>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true"/>
@@ -442,9 +453,9 @@
             </part-settings-by-part-id>
          </part-alignment>
       </part-alignments>
-      <discard-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <discard-location units="Millimeters" x="218.719" y="205.131" z="0.0" rotation="0.0"/>
       <properties/>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="/dev/tty.usbmodemFA143421" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="true" name="GcodeDriver">
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="/dev/tty.usbmodemFA143421" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="10000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="-0.001923076923077" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="true" name="GcodeDriver">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
             <text><![CDATA[^ok.*]]></text>
@@ -469,6 +480,31 @@
          </command>
          <command head-mountable-id="ACT1521428922298" type="ACTUATE_BOOLEAN_COMMAND">
             <text><![CDATA[{True:M810}{False:M811}]]></text>
+         </command>
+         <command head-mountable-id="A1" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[{True:M810}{False:M811}]]></text>
+         </command>
+         <command head-mountable-id="N1" type="PLACE_COMMAND">
+            <text><![CDATA[M805; n2 vacuum solenoid off]]></text>
+         </command>
+         <command head-mountable-id="N2" type="PICK_COMMAND">
+            <text><![CDATA[M800; n1 vacuum solenoid on]]></text>
+         </command>
+         <command type="ENABLE_COMMAND">
+            <text><![CDATA[;M810; turn on top cam LED]]></text>
+            <text><![CDATA[M808; tun on vacuum pump]]></text>
+         </command>
+         <command type="DISABLE_COMMAND">
+            <text><![CDATA[M811; Turn top camera LED off]]></text>
+            <text><![CDATA[M809; Turn vacuum pump off]]></text>
+            <text><![CDATA[M801; n1 vacuum solenoid off]]></text>
+            <text><![CDATA[M805; n2 vacuum solenoid off]]></text>
+         </command>
+         <command head-mountable-id="N1" type="PICK_COMMAND">
+            <text><![CDATA[M804; n2 vacuum solenoid on]]></text>
+         </command>
+         <command head-mountable-id="N2" type="PLACE_COMMAND">
+            <text><![CDATA[M801; n1 vacuum solenoid off]]></text>
          </command>
          <sub-drivers class="java.util.ArrayList"/>
          <axes class="java.util.ArrayList">
@@ -510,7 +546,7 @@
             </axis>
          </axes>
       </driver>
-      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" park-when-complete="false"/>
+      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" park-when-complete="true"/>
       <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" enabled-averaging="false" repeat-fiducial-recognition="3">
          <pipeline>
             <stages>
