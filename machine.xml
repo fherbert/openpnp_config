@@ -37,7 +37,7 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="69.006" y="-8.107" z="-10.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="69.5" y="-8.107" z="-10.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N2" name="N2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT2" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
@@ -74,7 +74,7 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="37.6" y="-9.4" z="-10.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="37.9" y="-9.4" z="-10.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
             </nozzles>
@@ -191,10 +191,10 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1521431493608" name="R0805-1" enabled="true" part-id="R0805-56" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="5">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1521431493608" name="R0805-1" enabled="true" part-id="R0805-56" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="6">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="86.412" y="102.051" z="-13.6" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="86.516" y="97.985" z="-13.6" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="86.476" y="102.133" z="-13.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="86.515" y="98.127" z="-13.6" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -216,9 +216,9 @@
       </feeders>
       <cameras>
          <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1521857774611" name="Bottom" looking="Up" settle-time-ms="250" rotation="-90.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
-            <units-per-pixel units="Millimeters" x="0.01010101" y="0.01030928" z="0.0" rotation="0.0"/>
+            <units-per-pixel units="Millimeters" x="0.01030928" y="0.01041667" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="266.476" y="-20.867" z="0.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="263.376" y="-20.707" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
             <calibration enabled="true">
                <camera-matrix length="9">2150.468983874484, 0.0, 631.0856994278606, 0.0, 2151.766783534624, 364.338668814196, 0.0, 0.0, 1.0</camera-matrix>
@@ -455,7 +455,7 @@
       </part-alignments>
       <discard-location units="Millimeters" x="218.719" y="205.131" z="0.0" rotation="0.0"/>
       <properties/>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="/dev/tty.usbmodemFA143421" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="10000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="-0.001923076923077" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="true" name="GcodeDriver">
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="/dev/tty.usbmodemFA143411" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="50000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="-0.001923076923077" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="true" name="GcodeDriver">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
             <text><![CDATA[^ok.*]]></text>
