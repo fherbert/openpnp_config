@@ -83,28 +83,16 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1522635403729" name="Top" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="USB 2.0 Camera #2 (Unknown) 0x1412000005a39310" format-id="6" fps="10">
-                  <units-per-pixel units="Millimeters" x="0.05" y="0.05050505" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1521422218348" name="Top" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="2" preferred-width="0" preferred-height="0" fps="24">
+                  <units-per-pixel units="Millimeters" x="0.05102041" y="0.05319149" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                   <calibration enabled="true">
-                     <camera-matrix length="9">2036.6094289169116, 0.0, 532.3274046025476, 0.0, 2025.464290579896, 385.4123694002778, 0.0, 0.0, 1.0</camera-matrix>
-                     <distortion-coefficients length="5">-0.9334957278364494, 15.883980318456155, -0.0018295519330586783, -0.004721841551136427, -152.0195643967257</distortion-coefficients>
+                     <camera-matrix length="9">2037.1333632879011, 0.0, 535.9414503963231, 0.0, 2045.8940031815712, 338.9818895147965, 0.0, 0.0, 1.0</camera-matrix>
+                     <distortion-coefficients length="5">-0.4089200605337962, -3.7398046056051713, 0.0034055372068466537, -0.00817778463785139, 35.231631629595675</distortion-coefficients>
                   </calibration>
-                  <back-light-compensation property="BackLightCompensation" value="1"/>
-                  <brightness property="Brightness" value="0"/>
-                  <contrast property="Contrast" value="128"/>
-                  <exposure property="Exposure" value="1" auto="true"/>
-                  <focus property="Focus"/>
-                  <gain property="Gain" value="0"/>
-                  <gamma property="Gamma" value="72"/>
-                  <hue property="Hue" value="0"/>
-                  <power-line-frequency property="PowerLineFrequency" value="1"/>
-                  <saturation property="Saturation" value="1"/>
-                  <sharpness property="Sharpness" value="3"/>
-                  <white-balance property="WhiteBalance" value="2800" auto="true"/>
-                  <zoom property="Zoom"/>
+                  <properties class="java.util.ArrayList"/>
                </camera>
             </cameras>
             <paste-dispensers/>
@@ -201,10 +189,10 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1521431493608" name="R0805-1" enabled="true" part-id="R0805-56" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1521431493608" name="R0805-1" enabled="true" part-id="R0805-56" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="1">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="86.981" y="202.135" z="-13.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="86.975" y="197.978" z="-13.6" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="79.57" y="201.716" z="-13.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="79.694" y="197.598" z="-13.6" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -225,28 +213,16 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1522635936635" name="Bottom" looking="Up" settle-time-ms="250" rotation="90.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="USB 2.0 Camera #4 (Unknown) 0x1414200005a39310" format-id="14" fps="10">
-            <units-per-pixel units="Millimeters" x="0.0101833" y="0.01014199" z="0.0" rotation="0.0"/>
+         <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1521857774611" name="Bottom" looking="Up" settle-time-ms="250" rotation="-90.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
+            <units-per-pixel units="Millimeters" x="0.01041667" y="0.01033058" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="262.99" y="78.26" z="0.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="256.523" y="78.321" z="1.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
-            <calibration enabled="false">
-               <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
-               <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+            <calibration enabled="true">
+               <camera-matrix length="9">2150.468983874484, 0.0, 631.0856994278606, 0.0, 2151.766783534624, 364.338668814196, 0.0, 0.0, 1.0</camera-matrix>
+               <distortion-coefficients length="5">-0.5463523430052905, 6.618181270566573, -0.0026085923424572794, 0.0039539227099047, -66.53333638473914</distortion-coefficients>
             </calibration>
-            <back-light-compensation property="BackLightCompensation" value="1"/>
-            <brightness property="Brightness" value="0"/>
-            <contrast property="Contrast" value="128"/>
-            <exposure property="Exposure" value="1" auto="true"/>
-            <focus property="Focus"/>
-            <gain property="Gain" value="0"/>
-            <gamma property="Gamma" value="72"/>
-            <hue property="Hue" value="0"/>
-            <power-line-frequency property="PowerLineFrequency" value="1"/>
-            <saturation property="Saturation" value="1"/>
-            <sharpness property="Sharpness" value="3"/>
-            <white-balance property="WhiteBalance" value="2800" auto="true"/>
-            <zoom property="Zoom"/>
+            <properties class="java.util.ArrayList"/>
          </camera>
       </cameras>
       <actuators>
@@ -482,7 +458,7 @@
       </part-alignments>
       <discard-location units="Millimeters" x="157.303" y="264.254" z="0.0" rotation="0.0"/>
       <properties/>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="/dev/tty.usbmodem141411" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="20000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="-0.003333333333333" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="false" name="GcodeDriver">
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="/dev/tty.usbmodem141411" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="50000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="-0.003333333333333" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="true" name="GcodeDriver">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
             <text><![CDATA[^ok.*]]></text>
